@@ -5,6 +5,8 @@ const MainNavbar = () => {
   return (
     <div>
 
+      <h2 className='font-semibold'>Dragon News Home</h2>
+
       <Outlet></Outlet>
     </div>
   );
