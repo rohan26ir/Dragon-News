@@ -23,7 +23,7 @@ const Navbar = () => {
           src={userIcon} 
           alt="" />
 
-          <button className='px-5 py-1 bg-gray-500'>Log  in</button>
+          <Link to={'/auth/login'}><button className='px-5 py-1 bg-gray-500'>Log  in</button></Link>
          </div>
          
         </div>
