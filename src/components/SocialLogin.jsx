@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
+import { AuthContext } from '../Provider/AuthProvider';
 
 const SocialLogin = () => {
+
+
   return (
     <div>
        <h2 className='font-bold mb-3'>Login with</h2>

@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const FindUs = () => {
+
+  const {user} = useContext(AuthContext);
+
   return (
     <div>
+      <h2 className="font-bold mb-3">Name:  {user && user.email}</h2>
+      <h2 className="font-bold mb-3">Name:  {user && user.displayName}</h2>
       <h2 className="font-bold mb-3">Find Us on</h2>
 
       <div className="*:w-full">
