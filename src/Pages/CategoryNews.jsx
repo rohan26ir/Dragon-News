@@ -5,7 +5,7 @@ import NewsCard from '../components/NewsCard';
 const CategoryNews = () => {
 
   const {data : newsList} = useLoaderData() //name change "data" to "news"
-  console.log(newsList);
+  // console.log(newsList);
   return (
     <div>
       <h2>Total Posts:  {newsList.length} </h2>

@@ -23,9 +23,19 @@ const Navbar = () => {
           
 
          <div className='flex space-x-3'>
-         <img 
+         
+         {
+          user ? 
+          <img 
+          className='h-10 w-10 rounded-full'
+          src={user.photoURL} 
+          alt="" />
+          :
+          <img  
+          className='h-10 w-10 rounded-full'
           src={userIcon} 
           alt="" />
+         }
 
 
           {
